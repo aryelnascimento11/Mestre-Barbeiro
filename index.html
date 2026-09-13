@@ -1,11 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <title>Mestre Barbeiro</title>
 </head>
+
 <body>
-    
+    <header>
+        <div class="logo">
+            <h1>Mestre Barbeiro</h1>
+            <img src="./imagens/logo.png" alt="Logo">
+        </div>
+        <nav class="HotBar">
+            <a href="#">Home</a>
+            <a href="#servicos">Serviços</a>
+            <a href="./sobre.html">Sobre</a>
+            <a href="#contatos">Contatos</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="./imagens/banner.png" alt="Barbearia">
+            <h1>Bem-vindo ao Mestre Barbeiro</h1>
+            <p>O melhor lugar para cuidar do seu estilo e aparência.</p>
+            <a href="#" class="btn">Agende seu horário</a>
+        </section>
+        <section id="servicos" class="service">
+            <div class="servicos">
+                <div class="service-header">
+                    <span>O QUE FAZEMOS</span>
+                    <h1>Nossos Serviços</h1>
+                    <p>
+                        Mais do que um corte. Uma experiência pensada
+                        para deixar seu estilo do jeito que você gosta.
+                    </p>
+                </div>
+                <div class="service-grid">
+                    <div class="service-card">
+                        <span class="service-number">01</span>
+                        <img src="./imagens/corte.png" alt="Corte masculino">
+                        <div class="service-info">
+                            <h2>Corte Masculino</h2>
+                            <p>
+                                Corte personalizado de acordo com seu estilo,
+                                acabamento preciso e finalização.
+                            </p>
+                            <div class="service-bottom">
+                                <strong>R$ 45</strong>
+                                <a href="#" class="service-btn">
+                                    Agendar →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-number">02</span>
+                        <img src="./imagens/barba.png" alt="Barba">
+                        <div class="service-info">
+                            <h2>Barba</h2>
+                            <p>
+                                Modelagem completa, toalha quente e acabamento
+                                para deixar a barba impecável.
+                            </p>
+
+                            <div class="service-bottom">
+                                <strong>R$ 35</strong>
+
+                                <a href="#" class="service-btn">
+                                    Agendar →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-card">
+                        <span class="service-number">03</span>
+                        <img src="./imagens/Dois.png" alt="Corte e barba">
+                        <div class="service-info">
+                            <h2>Corte + Barba</h2>
+                            <p>
+                                O combo completo para renovar o visual
+                                com corte e barba feitos na mesma sessão.
+                            </p>
+                            <div class="service-bottom">
+                                <strong>R$ 70</strong>
+                                <a href="#" class="service-btn">
+                                    Agendar →
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="location">
+
+            <div class="localizacao">
+
+                <div class="location-title">
+                    <span>onde nós estamos</span>
+                    <h1>Nossa Localização</h1>
+                </div>
+
+                <div class="location-info">
+
+                    <div class="location-icon">
+                        <span>⌖</span>
+                    </div>
+
+                    <div>
+                        <h2>Endereços:</h2>
+                        <p>Rua Exemplo, 123 - Bairro Exemplo, Cidade Exemplo</p>
+                        <p>Rua Fulano, 321 - Bairro Fulano, Cidade Fulano</p>
+                    </div>
+
+                </div>
+
+                <div class="location-info">
+
+                    <div class="location-icon">
+                        <span>◷</span>
+                    </div>
+
+                    <div>
+                        <h2>Horário de Funcionamento</h2>
+                        <p>Segunda a Sexta: 9h às 18h</p>
+                        <p>Sábado: 8h às 12h</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="location-map">
+
+                <div class="map-label">
+                    <span>📍</span>
+                    Mestre Barbeiro
+                </div>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.091187882168!2d-46.65687868452086!3d-23.5649499846867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c5e8b8e9b5%3A0x8c8c8c8c8c8c8c8c!2sMestre%20Barbeiro!5e0!3m2!1spt-BR!2sbr!4v1623456789012"
+                    loading="lazy" allowfullscreen="">
+                </iframe>
+            </div>
+        </section>
+        <section class="feedback">
+
+            <div class="feedback-content">
+
+                <h1>Nos <span>Avalie</span></h1>
+
+                <div id="estrelas" class="estrelas">
+
+                    <input type="radio" id="star5" name="result" value="5">
+                    <label for="star5">★</label>
+
+                    <input type="radio" id="star4" name="result" value="4">
+                    <label for="star4">★</label>
+
+                    <input type="radio" id="star3" name="result" value="3">
+                    <label for="star3">★</label>
+
+                    <input type="radio" id="star2" name="result" value="2">
+                    <label for="star2">★</label>
+
+                    <input type="radio" id="star1" name="result" value="1">
+                    <label for="star1">★</label>
+
+                </div>
+
+                <div class="feedback-field">
+                    <h2>Nome:</h2>
+                    <input type="text" placeholder="Digite seu nome">
+                </div>
+
+                <div class="feedback-field">
+                    <h2>Comentário:</h2>
+                    <textarea placeholder="Digite seu comentário"></textarea>
+                </div>
+
+                <button type="button">Enviar Feedback</button>
+
+            </div>
+
+        </section>
+        <footer id="contatos" class="footer">
+
+            <div>
+                <img src="./imagens/logo.png" alt="logo">
+                <h2>Mestre Barbeiro</h2>
+            </div>
+
+            <div  class="footer-icons">
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+
+                 <a href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+
+            <a id="footer-copy">
+                © 2026 Mestre Barbeiro — Todos os direitos reservados
+            </a>
+
+            <p>
+                Desenvolvido por:
+                <a href="https://www.instagram.com/aryeln897/">
+                    Aryel
+                </a>
+            </p>
+
+        </footer>
+
+    </main>
 </body>
+
 </html>
